@@ -7,4 +7,7 @@ After installing the plugin there will be a new button in the text editor labell
 
 Copy or Cut the text into the clipboard and paste into your raw HTML blog post.
 
-Here's an example Snippet generated from the Snippet plugin
+Needed Features
+===============
+
+Adding a preferences section so that the various options for the Orion Editor can be set before generating a snippet.  At the moment it defaults to creating a JavaScript styled editor that is read only.
