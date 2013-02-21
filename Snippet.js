@@ -10,7 +10,7 @@
  *    Ken Walker
  *******************************************************************************/
 
-/*global define eclipse window document */
+/*global define orion window document */
 window.onload = function() {
 	var scriptString = '<link rel="stylesheet" type="text/css" href="http://eclipse.org/orion/editor/releases/2.0/built-editor.css"/>\n<script src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js">\n</script>\n<script>\n\trequire(["orion/editor/edit"], function(edit) {\n\t\tedit({className: "editor"});\n\t});\n</script>';
 	var preCode = '<pre class="editor" data-editor-lang="js" data-editor-readonly="true">';
@@ -44,7 +44,7 @@ window.onload = function() {
     var serviceProperties = {
         name: 'Snippet',
         tooltip: 'Create a JavaScript Orion Editor Snippet for a Web Page',
-        key: ['S', true, true] // Ctrl+Shift+D
+        key: ['S', true, true] // Ctrl+Shift+S
     };
     provider.registerServiceProvider('orion.edit.command', serviceImpl, serviceProperties);
     provider.connect();

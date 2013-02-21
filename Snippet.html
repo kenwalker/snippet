@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Snippet: Create Orion Editor from Text Snippet</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<script type="text/javascript" src="lib/plugin.js"></script>
-	<script type="text/javascript" src="Snippet.js"></script>
-</head>
-<body>
-<p>This is an <a href="http://wiki.eclipse.org/Orion">Eclipse Orion</a> plugin to create an HTML Snippet that will display the selected text in an editor.</p>
-<p>After installing the plugin there will be a new button in the text editor
-labelled "Snippet".  Select some text editor and press it.  A new section of text will be inserted into the editor containing an entire HTML Snippet that when inserted into your blog should display the selected
-text in a read-only version of the Orion Editor.</p><p>Copy or Cut the text into the clipboard and paste into your raw HTML blog post.</p>
+	<head>
+		<meta charset='utf-8' />
+		<meta name="description" content="Snippet : Code Snippet Editor Plugin for Orion" />
+	
+		<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+		<script type="text/javascript" src="lib/plugin.js"></script>
+		<script type="text/javascript" src="Snippet.js"></script>
+		
+		<title>Code Snippet Editor Plugin for Orion</title>
+		
+		<script>
+			function installIn2Another() {
+				var url = prompt("Enter Orion url");
+				if (url){
+					window.open(url + "/settings/settings.html#,category=plugins,installPlugin=" + window.location.href.split('#')[0]);
+				}
+			}
+			
+			function installIn2OrionHub() {
+				window.open("https://orionhub.org/settings/settings.html#,category=plugins,installPlugin=" + window.location.href.split('#')[0]);
+			}
+		</script>
+	</head>
+
+	<body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+		<header class="inner">
+			<a id="forkme_banner" href="https://github.com/kenwalker/snippet">View on GitHub</a>
+			<h1 id="project_title">Snippet : Code Snippet Editor Plugin for Orion</h1>
+			<h2 id="project_tagline">An Orion Plugin to generate a blog post or HTML insert from a selected code snippet in the Orion Editor</h2>
+		</header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<h1>Snippet : Code Snippet Editor Plugin for Orion</h1>
+			<p>
+				This is a plugin for <a href="http://eclipse.org/orion/">Eclipse Orion</a>.
+				The plugin adds a command to the Orion Editor for creating an HTML fragment to show your code snippet in an HTML page. You just highlight the code you want and press the <b>Snippet</b> button.
+			</p>
+			<p>
+				<a href="" onclick="installIn2OrionHub();">Install into OrionHub</a>
+				or <a href="" onclick="installIn2Another();">another Orion instance</a>
+			</p>
 <p>Here's an example <b>Snippet</b> generated from the Snippet plugin</p>
 
 <link rel="stylesheet" type="text/css" href="http://eclipse.org/orion/editor/releases/2.0/built-editor.css"/>
@@ -25,12 +61,24 @@ text in a read-only version of the Orion Editor.</p><p>Copy or Cut the text into
     var serviceProperties = {
         name: 'Snippet',
         tooltip: 'Create a JavaScript Orion Editor Snippet for a Web Page',
-        key: ['S', true, true] // Ctrl+Shift+D
+        key: ['S', true, true] // Ctrl+Shift+S
     };
     provider.registerServiceProvider('orion.edit.command', serviceImpl, serviceProperties);
-    provider.connect();
+
+
 </pre>
 
+</section>
+	</div>
 
-</body>
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Created by <a href="https://github.com/kenwalker">Ken Walker</a><br>
+			under Eclipse Public License v1.0 (http://www.eclipse.org/legal/epl-v10.html),<br>
+			and the Eclipse Distribution License v1.0 (http://www.eclipse.org/org/documents/edl-v10.html)</p>
+		</footer>
+	</div>
+
+	</body>
 </html>
