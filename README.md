@@ -1,7 +1,7 @@
 snippet
 =======
 
-This is an Eclipse Orion plugin to create an HTML Snippet that will display the selected text in an editor.
+This is an Eclipse Orion plugin to create an HTML Snippet that will display the selected text inside an Orion editor on your blog or web page.
 
 You can view the [Snippet Orion Plugin](http://kenwalker.github.com/snippet/Snippet.html "Orion Snippet Plugin") on GitHub.
 
