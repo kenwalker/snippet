@@ -12,4 +12,4 @@ Copy or Cut the text into the clipboard and paste into your raw HTML blog post.
 Needed Features
 ===============
 
-Adding a preferences section so that the various options for the Orion Editor can be set before generating a snippet.  At the moment it defaults to creating a JavaScript styled editor that is read only.
+Need more options in the settings page, have added read/write boolean for now.
