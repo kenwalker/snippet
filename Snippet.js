@@ -12,7 +12,7 @@
 
 /*global define orion window document */
 window.onload = function() {
-    var scriptString = '<link rel="stylesheet" type="text/css" href="http://eclipse.org/orion/editor/releases/2.0/built-editor.css"/>\n<script src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js">\n</script>\n<script>\n\trequire(["orion/editor/edit"], function(edit) {\n\t\tedit({className: "editor"});\n\t});\n</script>';
+    var scriptString = '<link rel="stylesheet" type="text/css" href="https://eclipse.org/orion/editor/releases/2.0/built-editor.css"/>\n<script src="https://eclipse.org/orion/editor/releases/2.0/built-editor.min.js">\n</script>\n<script>\n\trequire(["orion/editor/edit"], function(edit) {\n\t\tedit({className: "editor"});\n\t});\n</script>';
     var preCode = '<pre class="editor" data-editor-lang="js" data-editor-readonly="';
     var postCode = '</pre>';
     var readOnly = true;
