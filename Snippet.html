@@ -22,6 +22,10 @@
 			function installIn2OrionHub() {
 				window.open("https://orionhub.org/settings/settings.html#,category=plugins,installPlugin=" + window.location.href.split('#')[0]);
 			}
+
+			function installIn2JazzHub() {
+				window.open("https://hub.jazz.net/code/settings/settings.html#,category=plugins,installPlugin=" + window.location.href.split('#')[0]);
+			}
 		</script>
 	</head>
 
@@ -41,15 +45,18 @@
 		<section id="main_content" class="inner">
 			<h1>Snippet : Code Snippet Editor Plugin for Orion</h1>
 			<p>
-				This is a plugin for <a href="http://eclipse.org/orion/">Eclipse Orion</a>.
+				This is a plugin for <a href="http://eclipse.org/orion/">Eclipse Orion</a> or any Orion based product.<br><br>
+				
+				<b>Please ensure</b> you're viewing this page via https <a href="https://kenwalker.github.io/snippet/Snippet.html">Code Snippet Editor Plugin</a><br><br>
+				
 				The plugin adds a command to the Orion Editor for creating an HTML fragment to show your code snippet in an HTML page.
-				After installing the plugin there will be a new button in the text editor labelled <b>"Snippet"</b>. Select some text in the editor
+				After installing the plugin there will be a new item in the <b>Tools</b> menu labelled <b>"Snippet"</b>. Select some text in the editor
 				and press it. A new section of text will be inserted into the editor containing an entire HTML Snippet that when inserted into your
 				blog should display the selected text in a read-only version of the Orion Editor.
 				Copy or Cut the text into the clipboard and paste into your raw HTML blog post. Then <b>Undo</b> to get your old text back in the Editor.
 			</p>
 			<p>
-				<a href="" onclick="installIn2OrionHub();">Install into OrionHub</a>
+				<a href="" onclick="installIn2OrionHub();">Install into OrionHub</a>, <a href="" onclick="installIn2JazzHub();">Install into JazzHub</a>
 				or <a href="" onclick="installIn2Another();">another Orion instance</a>
 			</p>
 <p>Here's an example <b>Snippet</b> generated from the Snippet plugin</p>
