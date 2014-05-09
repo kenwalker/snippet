@@ -11,6 +11,7 @@
 		<title>Code Snippet Editor Plugin for Orion</title>
 		
 		<script>
+			/*global prompt window*/
 			function installIn2Another() {
 				var url = prompt("Enter Orion url");
 				if (url){
@@ -54,9 +55,10 @@
 <p>Here's an example <b>Snippet</b> generated from the Snippet plugin</p>
 
 <link rel="stylesheet" type="text/css" href="http://eclipse.org/orion/editor/releases/2.0/built-editor.css"/>
-<script src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js">
+<script src="http://eclipse.org/orion/editor/releases/5.0/built-editor.min.js">
 </script>
 <script>
+	/*global require*/
 	require(["orion/editor/edit"], function(edit) {
 		edit({className: "editor"});
 	});
